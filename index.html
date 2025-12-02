@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Cuaca Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Masukkan nama kota (contoh: Jakarta)" spellcheck="false">
+            <button id="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+        </div>
+
+        <div class="error">
+            <p>Kota tidak ditemukan!</p>
+        </div>
+
+        <div class="weather">
+            <img src="https://openweathermap.org/img/wn/01d@2x.png" class="weather-icon" alt="ikon cuaca">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2>
+            <p class="description">Cerah Berawan</p>
+
+            <div class="details">
+                <div class="col">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2193b0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:10px"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Kelembaban</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2193b0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:10px"><path d="M9.59 4.59A5 5 0 1 1 11 14H2"></path><path d="M17.58 13.58A5 5 0 1 1 17 21H2"></path><path d="M5 3v5"></path></svg>
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Angin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
